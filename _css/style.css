@@ -4,3 +4,11 @@
 .half-image{
     width: 100%;
 }
+
+
+.testimonial-user-box{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.37)
+}
