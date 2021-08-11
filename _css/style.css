@@ -132,3 +132,82 @@
 }
 
 /* testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section */
+
+/* packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section */
+
+#packages-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.package-head {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  text-align: center;
+}
+
+.package-box {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+  padding: 5px;
+}
+
+.package-box:hover {
+  border: solid 5px #4adede;
+}
+
+.strip {
+  height: 8px;
+  border-radius: 10px;
+  background-color: #4adede;
+}
+
+.package-name {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #4adede;
+  text-align: center;
+}
+
+.package-price {
+  text-align: center;
+  font-weight: 200;
+  font-size: 65px;
+  color: #a1a1a1;
+}
+
+.package-price-dollar {
+  font-size: 40px;
+  font-weight: 600;
+  color: #4adede;
+}
+
+.package-month {
+  font-size: 30px;
+}
+
+.package-features {
+  margin-left: 40px;
+  color: #a1a1a1;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.package-icon {
+  font-size: 14px;
+  color: #4adede;
+  margin-right: 10px;
+}
+
+/* packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section   packages-section */
+
+/* wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section */
+
+#wave-section {
+  margin-top: -200px;
+  opacity: 0.1;
+}
+
+/* wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section */
