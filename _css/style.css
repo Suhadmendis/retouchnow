@@ -1,69 +1,134 @@
+/*                    #1e2f97                   */
+/*                    #1aa7ec                   */
+/*                    #4adede                   */
+/*                    #0c0032                   */
+/*                    #A1A1A1                   */
 
-
-
-.half-image{
-    width: 100%;
-}
-
-
-.testimonial-user-box{
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.37)
-}
-
-
-
-
-/* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
-
-#qoute-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-
-#quote-test{
-    font-size: 50px;
-}
-
-#quote-owner-name{
-    color: #1aa7ec;
-    font-weight: 600;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 /* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
 
+#qoute-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#quote-test {
+  font-size: 50px;
+}
+
+#quote-owner-name {
+  color: #1aa7ec;
+  font-weight: 600;
+}
+
+/* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
 
 /* progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section */
 
-.progress-box{
-    background-color: rgba(204, 204, 204, 0.459);
-    text-align: center;
-    border-radius: 10px;
-    color: rgb(88, 88, 88);
-    padding: 30px;
+.progress-box {
+  background-color: rgba(204, 204, 204, 0.459);
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(88, 88, 88);
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  transition-duration: 0.5s;
+  /* transition-delay: 2s; */
 }
-.progress-icon-area{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 50px;
+.progress-icon-area {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 50px;
 }
-.progress-head-text{
-    font-size: 20px;
-    font-weight: 600;
+.progress-head-text {
+  font-size: 20px;
+  font-weight: 600;
 }
-.progress-des-text{
-    font-size: 14px;
+.progress-des-text {
+  font-size: 14px;
 }
 
-.progress-box:hover{
-    background-color: #1aa7ec;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    padding: 30px;
+.progress-box:hover {
+  background-color: #1aa7ec;
+  color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.37);
 }
 
 /* progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section */
+
+/* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
+
+#story1-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
+
+/* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
+
+#story2-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
+
+/* testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section */
+
+#testimonial-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonial-user-box {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.testimonial-user-hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+}
+
+.testimonial-user-box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+}
+
+.testimonial-user-image {
+  margin-top: 4px;
+  margin-left: 7px;
+}
+
+.testimonial-user-name {
+  color: #0c0032;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.testimonial-user-position {
+  color: #a1a1a1;
+  font-size: 13px;
+}
+
+#testimonial-feedback-box {
+  margin-top: 15px;
+}
+
+.testimonial-feedback-starts {
+  color: #ecbf6a;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.testimonial-feedback-message {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+/* testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section */
