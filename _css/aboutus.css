@@ -26,6 +26,16 @@
   width: 100%;
 }
 
+.story1-head {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0c0032;
+}
+
+.story1-sub {
+  color: #0c0032;
+}
+
 /* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
 
 /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
@@ -39,6 +49,16 @@
   width: 100%;
 }
 
+.story2-head {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0c0032;
+}
+
+.story2-sub {
+  color: #0c0032;
+}
+
 /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
 
 /* story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section */
@@ -50,6 +70,16 @@
 
 .story3-image {
   width: 100%;
+}
+
+.story3-head {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0c0032;
+}
+
+.story3-sub {
+  color: #0c0032;
 }
 
 /* story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section */
