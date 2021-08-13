@@ -1,0 +1,27 @@
+.page-title {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+#job-table {
+  border-color: white;
+}
+
+.table-header {
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+}
+
+.top-table-header {
+  /* height: 100px; */
+  /* vertical-align: middle; */
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-header:hover {
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
