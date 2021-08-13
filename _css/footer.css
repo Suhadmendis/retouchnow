@@ -1,0 +1,70 @@
+#footer-section {
+  background-color: black;
+  padding-top: 100px;
+}
+
+.footer-logo {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 70%;
+  margin-bottom: 30px;
+
+  transition-duration: 0.5s;
+}
+
+.footer-logo:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.footer-des {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  color: darkgray;
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+
+  transition-duration: 0.2s;
+}
+
+.footer-social-icon:hover {
+  color: white;
+}
+
+.footer-head {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.footer-sub {
+  font-size: 14px;
+  color: darkgray;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.footer-sub:hover {
+  color: white;
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+  margin-right: 10px;
+  display: inline;
+  color: darkgray;
+  float: right;
+  cursor: pointer;
+
+  transition-duration: 0.2s;
+}
+
+.footer-bottom-text:hover {
+  color: white;
+}

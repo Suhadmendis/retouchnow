@@ -1,0 +1,55 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.vertical-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
+
+#story1-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.story1-image {
+  width: 100%;
+}
+
+/* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
+
+/* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
+
+#story2-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.story2-image {
+  width: 100%;
+}
+
+/* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
+
+/* story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section */
+
+#story3-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.story3-image {
+  width: 100%;
+}
+
+/* story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section */

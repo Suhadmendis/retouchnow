@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+.vertical-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-title {
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
 
 #qoute-section {
@@ -68,6 +80,15 @@
 #story1-section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.story1-head {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0c0032;
+}
+
+.story1-sub {
 }
 
 /* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
