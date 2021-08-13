@@ -49,10 +49,24 @@ var app = new Vue({
   },
 });
 
+document.getElementById("pill-1").style.color = "black";
+document.getElementById("pill-2").style.color = "black";
+document.getElementById("pill-3").style.color = "black";
+document.getElementById("pill-4").style.color = "black";
+
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
+
+  document.getElementById("pill-1").style.color = "#818181";
+  document.getElementById("pill-2").style.color = "#818181";
+  document.getElementById("pill-3").style.color = "#818181";
+  document.getElementById("pill-4").style.color = "#818181";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById("pill-1").style.color = "black";
+  document.getElementById("pill-2").style.color = "black";
+  document.getElementById("pill-3").style.color = "black";
+  document.getElementById("pill-4").style.color = "black";
 }
