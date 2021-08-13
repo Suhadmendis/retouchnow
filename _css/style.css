@@ -30,6 +30,7 @@
 
 #quote-test {
   font-size: 50px;
+  color: #0c0032;
 }
 
 #quote-owner-name {
@@ -89,6 +90,7 @@
 }
 
 .story1-sub {
+  color: #0c0032;
 }
 
 /* story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section   story1-section */
@@ -153,6 +155,7 @@
 .testimonial-feedback-message {
   margin-top: 30px;
   font-size: 15px;
+  color: #0c0032;
 }
 
 /* testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section   testimonial-section */
@@ -167,7 +170,7 @@
 .package-head {
   margin-top: 100px;
   margin-bottom: 100px;
-
+  color: #0c0032;
   text-align: center;
 }
 
@@ -175,10 +178,11 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .package-box:hover {
-  border: solid 5px #4adede;
+  /* border: solid 5px #4adede; */
 }
 
 .strip {
