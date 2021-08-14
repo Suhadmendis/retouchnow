@@ -21,6 +21,45 @@
   margin-bottom: 30px;
 }
 
+.button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 34px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  transition-duration: 0.5s;
+}
+
+.button-primary{
+  background-color: #1aa7ec;
+}
+
+
+.button-default{
+  background-color: rgb(189, 189, 189);
+}
+
+.button-primary:hover{
+  background-color: #2dabeb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-default:hover{
+  background-color: #1aa7ec;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
 /* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
 
 #qoute-section {
@@ -55,6 +94,19 @@
   transition-duration: 0.5s;
   /* transition-delay: 2s; */
 }
+
+.progress-box-active {
+  background-color: #1aa7ec;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #1aa7ec;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+  padding: 30px;
+
+  margin-bottom: 15px;
+}
+
 .progress-icon-area {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -73,6 +125,7 @@
   color: white;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.37);
 }
+
 
 /* progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section */
 
