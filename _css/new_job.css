@@ -51,11 +51,13 @@
 .note {
   font-weight: 600;
   margin-top: 20px;
+  margin-bottom: 2px;
 }
 
 .note-input {
   /* width: 100%; */
   border-radius: 5px;
+  height: 100px;
   /* border-color: #a1a1a1; */
 }
 

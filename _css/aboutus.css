@@ -83,3 +83,23 @@
 }
 
 /* story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section   story3-section */
+
+/* we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section */
+
+#we-are-hiring-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1aa7ec;
+  text-align: center;
+}
+
+.we-head {
+  color: white;
+  font-weight: 600;
+}
+
+.we-des {
+  color: white;
+}
+
+/* we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section */
