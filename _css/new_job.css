@@ -1,0 +1,96 @@
+.job-name {
+  text-align: left;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #0c0032;
+}
+
+.job-ref {
+  margin-top: 20px;
+  text-align: right;
+  margin-top: 30px;
+
+  color: #0c0032;
+}
+
+.photo-box {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.close-button-area {
+  text-align: right;
+}
+
+.close-icon {
+  font-size: 18px;
+  color: #a1a1a1;
+}
+
+.close-icon:hover {
+  color: #5e5e5e;
+}
+
+.editing-category {
+  font-weight: 600;
+}
+
+.cost {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.note {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.note-input {
+  /* width: 100%; */
+  border-radius: 5px;
+  /* border-color: #a1a1a1; */
+}
+
+.job-total-area {
+  padding-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.job-total-name {
+  text-align: left;
+  font-weight: 600;
+  color: #0c0032;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.job-total-total {
+  text-align: right;
+  font-weight: 600;
+  color: #0c0032;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.button-left {
+  float: left;
+}
+
+.button-right {
+  float: right;
+}

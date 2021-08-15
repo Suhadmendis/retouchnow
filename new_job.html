@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetouchNow</title>
+
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <link rel="stylesheet" href="_css/header.css">
+  <link rel="stylesheet" href="_css/style.css">
+  <link rel="stylesheet" href="_css/footer.css">
+
+  <link rel="stylesheet" href="_css/new_job.css">
+
+</head>
+
+<body>
+  <div id="app">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="_img/logo.png" alt="" height="30">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <button class="navbar-toggler" type="button" onclick="openNav()" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item top-menu">
+              <a class="nav-link active" aria-current="page" href="#">Packages and Services</a>
+            </li>
+            <li class="nav-item top-menu">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item top-menu">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item top-menu">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item top-menu dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#" id="pill-1">Packages and Services</a>
+        <a href="#" id="pill-2">Reviews</a>
+        <a href="#" id="pill-3">About Us</a>
+        <a href="#" id="pill-4">Contact Us</a>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="job-name">Job Name:</h2>
+        </div>
+        <div class="col-md-6">
+          <h5 class="job-ref">Job Number: JOB/00002334</h5>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-md-12">
+          <div class="photo-box">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image-box">
+                  <img class="image" src="_img/new_job/89293416_2845746348848190_2139080574550147072_n.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="close-button-area">
+                  <i class="fas fa-times-circle close-icon"></i>
+                </div>
+                <p class="editing-category">
+                  Editing Category
+                </p>
+                <button class="button button-default">Base Retouch</button>
+                <button class="button button-default">Advanced Retouch</button>
+                <!-- <button class="button button-primary">My Jobs</button> -->
+                <p class="cost">Cost: $ 12.00</p>
+                <p class="note">Note:</p>
+                <textarea name="" id="" class="form-control note-input"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="photo-box">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image-box">
+                  <img class="image" src="_img/new_job/gugu-mbatha-raw-aktrisa-devushka-ulybka.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="close-button-area">
+                  <i class="fas fa-times-circle close-icon"></i>
+                </div>
+                <p class="editing-category">
+                  Editing Category
+                </p>
+                <button class="button button-default">Base Retouch</button>
+                <button class="button button-default">Advanced Retouch</button>
+                <!-- <button class="button button-primary">My Jobs</button> -->
+                <p class="cost">Cost: $ 12.00</p>
+                <p class="note">Note:</p>
+                <textarea name="" id="" class="form-control note-input"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="photo-box">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image-box">
+                  <img class="image" src="_img/new_job/2245161.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="close-button-area">
+                  <i class="fas fa-times-circle close-icon"></i>
+                </div>
+                <p class="editing-category">
+                  Editing Category
+                </p>
+                <button class="button button-default">Base Retouch</button>
+                <button class="button button-default">Advanced Retouch</button>
+                <!-- <button class="button button-primary">My Jobs</button> -->
+                <p class="cost">Cost: $ 12.00</p>
+                <p class="note">Note:</p>
+                <textarea name="" id="" class="form-control note-input"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12">
+          <div class="job-total-area">
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="job-total-name">Job Name:</h4>
+              </div>
+              <div class="col-md-6">
+                <h4 class="job-total-total">Total Cost: $ 32.00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-12">
+          <button class="button button-border button-left">Add Another Image</button>
+          <button class="button button-primary button-right">Continue</button>
+        </div>
+        
+
+
+      </div>
+
+
+    </div>
+
+<br><br>
+
+      <div id="footer-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="footer-logo" src="_img/bnw-logo.png" alt="">
+              <p class="footer-des">
+                If you need help transforming your business, want to discuss an idea, or simply find out a bit more about us,
+                get in
+                touch.
+              </p>
+      
+              <i class="fab fa-facebook-square footer-social-icon"></i>
+              <i class="fab fa-pinterest-square footer-social-icon"></i>
+              <i class="fab fa-twitter-square footer-social-icon"></i>
+              <i class="fab fa-youtube-square footer-social-icon"></i>
+            </div>
+            <div class="offset-md-2 col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+      
+                  <p class="footer-head">Support</p>
+      
+                  <p class="footer-sub">Help & FAQs</p>
+                  <p class="footer-sub">Contact us</p>
+                  <p class="footer-sub">Refunds</p>
+                  <p class="footer-sub">Platform Status</p>
+                  <p class="footer-sub">Affiliate Program</p>
+                  <p class="footer-sub">About us</p>
+      
+                </div>
+                <div class="col-md-6">
+      
+                  <p class="footer-head">Company</p>
+      
+                  <p class="footer-sub">Blog</p>
+                  <p class="footer-sub">Affiliate Program</p>
+                  <p class="footer-sub">Background Removal</p>
+                  <p class="footer-sub">Careers</p>
+                  <p class="footer-sub">About us</p>
+                  <p class="footer-sub">Press</p>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <br>
+        <br><br>
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer-bottom-text">
+                Imprint
+              </p>
+              <p class="footer-bottom-text"> | </p>
+              <p class="footer-bottom-text">
+                General Terms and Conditions
+              </p>
+              <p class="footer-bottom-text"> | </p>
+              <p class="footer-bottom-text">
+                Terms of Service
+              </p>
+              <p class="footer-bottom-text"> | </p>
+              <p class="footer-bottom-text">
+                Cookie Policy
+              </p>
+              <p class="footer-bottom-text"> | </p>
+              <p class="footer-bottom-text">
+                Privacy Policy
+              </p>
+      
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+
+
+  </div>
+
+
+
+
+
+
+  <script src="_js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>

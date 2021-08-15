@@ -21,16 +21,16 @@
   margin-bottom: 30px;
 }
 
-.button{
+.button {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 12px 34px;
+  padding: 9px 28px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   margin-left: 3px;
   margin-right: 3px;
 
@@ -39,27 +39,36 @@
   transition-duration: 0.5s;
 }
 
-.button-primary{
+.button-primary {
   background-color: #1aa7ec;
 }
 
-
-.button-default{
+.button-default {
   background-color: rgb(189, 189, 189);
 }
 
-.button-primary:hover{
+.button-border {
+  background-color: white;
+  color: #1aa7ec;
+  border: 2px solid #1aa7ec;
+}
+
+.button-primary:hover {
   background-color: #2dabeb;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.button-default:hover{
+.button-default:hover {
   background-color: #1aa7ec;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
-
+.button-border:hover {
+  background-color: #1aa7ec;
+  color: white;
+  border: 2px solid #1aa7ec;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 /* qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section   qoute-section */
 
 #qoute-section {
@@ -125,7 +134,6 @@
   color: white;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.37);
 }
-
 
 /* progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section   progress-section */
 
