@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="_css/slider/style.css"> <!-- Resource style -->
 	<script src="_js/modernizr.js"></script> <!-- Modernizr -->
 
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="_css/header.css">
     <link rel="stylesheet" href="_css/style.css">
@@ -114,8 +114,10 @@
       <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 id="quote-test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum</h1>
-                <p id="quote-owner-name">Lorem ipsum</p>
+                <h1 id="quote-test" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum</h1>
+                <p id="quote-owner-name" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">Lorem ipsum</p>
             </div>
         </div>
       </div>
@@ -171,8 +173,9 @@
       <div class="container">
           <div class="row">
               <div class="col-md-6">
-                  <div class="vertical-center">
-                    <img class="story1-image" src="_img/home_page/neural-filters (1).webp" alt="">
+                  <div class="vertical-center" data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom">
+                    <img class="story1-image"  src="_img/home_page/neural-filters (1).webp" alt="">
                   </div>
               </div>
               <div class="col-md-6">
@@ -209,7 +212,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-              <div class="vertical-center">
+              <div class="vertical-center" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
                 <img class="half-image" src="_img/home_page/07dbeb640cfa863380242d90ce8ba7dde99c29cc_en-photo-editor-img-4 (1).webp" alt="">
               </div>
             </div>
@@ -222,7 +226,8 @@
         <div class="row">
             
             <div class="col-md-6">
-              <div class="vertical-center">
+              <div class="vertical-center" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
                 <img class="half-image" src="_img/home_page/07dbeb640cfa863380242d90ce8ba7dde99c29cc_en-photo-editor-img-4 (1).webp" alt="">
               </div>
             </div>
@@ -561,7 +566,6 @@
     </div>
 
 
-
   </div>
 
 
@@ -572,6 +576,10 @@
 
     <script src="_js/script.js" ></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <!-- 

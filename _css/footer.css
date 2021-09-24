@@ -55,6 +55,7 @@
 }
 
 .a-link{
+  text-decoration: none;
   color: darkgray;
 }
 .a-link:hover{

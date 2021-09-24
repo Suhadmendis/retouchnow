@@ -103,3 +103,27 @@
 }
 
 /* we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section   we-are-hiring-section */
+
+
+@media (max-width: 767px) {
+  #story1-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .page-title {
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .vertical-center{
+    margin-top: 20px;
+  }
+  .story1-sub{
+    margin-top: 20px;
+  }
+  .story2-sub{
+    margin-top: 20px;
+  }
+  .story3-sub{
+    margin-top: 20px;
+  }
+}
