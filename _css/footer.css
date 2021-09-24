@@ -54,6 +54,15 @@
   color: white;
 }
 
+
+#footer-bottom-text-box{
+  display: block;
+}
+#footer-bottom-text-box-mobile{
+  display: none;
+}
+
+
 .footer-bottom-text {
   font-size: 14px;
   margin-right: 10px;
@@ -67,4 +76,31 @@
 
 .footer-bottom-text:hover {
   color: white;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .footer-des {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .footer-social-icon {
+    font-size: 35px;
+  }
+  .footer-head {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .footer-sub {
+    font-size: 16px;
+  }
+  #footer-bottom-text-box{
+    display: none;
+  }
+  #footer-bottom-text-box-mobile{
+    display: block;
+  }
+
 }
