@@ -43,6 +43,20 @@
   background-color: #1aa7ec;
 }
 
+.login-button{
+  color: rgb(0, 0, 0, .55);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+
+.login-button:hover{
+  color: rgb(0, 0, 0, .65);
+}
+
 .button-default {
   background-color: rgb(189, 189, 189);
 }
@@ -312,14 +326,23 @@
 
 
 @media (max-width: 767px) {
+  .vertical-center {
+    margin-top: 50px;
+  }
   /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
 
+  #story1-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   #story2-section {
     display: none;
   }
   
   #story2-section-mobile{
     display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
 
@@ -327,6 +350,13 @@
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+  }
+
+  #wave-section{
+    height: 200px;
+  }
+  #wave-section > img{
+    display: none;
   }
 
 
