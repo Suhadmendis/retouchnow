@@ -10,7 +10,7 @@ var app = new Vue({
         feedback_title: "Lorem ipsum, dolor consectetur",
         stars: 5,
         message:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta explicabo quo distinctio ab quisquam. Nesciunt recusandae enim sint! Exercitationem necessitatibus quibusdam esse quo ipsam labore recusandae corrupti illo quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta explicabo quo distinctio ab quisquam. Nesciunt recusandae enim sint! Exercitationem necessitatibus quibusdam esse quo ipsam labore recusandae corrupti illo quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta explicabo quo distinctio ab quisquam. Nesciunt recusandae enim sint! Exercitationem necessitatibus quibusdam esse quo ipsam labore recusandae corrupti illo quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta explicabo quo distinctio ab quisquam. Nesciunt recusandae enim sint! Exercitationem necessitatibus quibusdam esse quo ipsam labore recusandae corrupti illo quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta explicabo quo distinctio ab quisquam. Nesciunt recusandae enim sint! Exercitationem.",
       },
       {
         REF: "2",
@@ -44,6 +44,11 @@ var app = new Vue({
   },
   methods: {
     select_user_testimonial: function (user) {
+
+      if(window.innerWidth < 768){
+        document.getElementById("testimonial-feedback-box").scrollIntoView();
+      }
+      
       this.selected_user = user;
     },
   },

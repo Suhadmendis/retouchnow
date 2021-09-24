@@ -54,6 +54,12 @@
   color: white;
 }
 
+.a-link{
+  color: darkgray;
+}
+.a-link:hover{
+  color: white;
+}
 
 #footer-bottom-text-box{
   display: block;
