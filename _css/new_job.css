@@ -1,10 +1,37 @@
+
+.job-name-box {
+  margin-top: 10px;
+}
+
 .job-name {
   text-align: left;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
   color: #0c0032;
+  /* display: inline; */
+  float: left;
 }
+
+.job-name-input{
+  /* display: inline; */
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  height: 40px;
+  /* border: none; */
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.0);
+  outline: none;
+
+  font-size: 20px;
+}
+
+.job-name-input:focus { 
+  border-color: none
+}
+
 
 .job-ref {
   margin-top: 20px;
@@ -95,4 +122,19 @@
 
 .button-right {
   float: right;
+}
+
+
+@media (max-width: 767px) {
+  .close-icon{
+    display: none;
+  }
+  .editing-category{
+    margin-top: 10px;
+  }
+  .job-total-total {
+    text-align: left;
+    margin-left: 20px;
+  }
+
 }

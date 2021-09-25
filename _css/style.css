@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.navbar-light .navbar-toggler{
+  border-color: rgb(0, 0, 0, .0);
+}
+
 .vertical-center {
   height: 100%;
   display: flex;
@@ -44,6 +48,7 @@
 }
 
 .login-button{
+  text-decoration: none;
   color: rgb(0, 0, 0, .55);
   margin-left: 10px;
   margin-right: 10px;
