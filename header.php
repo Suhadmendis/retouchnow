@@ -43,3 +43,14 @@
 
         </div>
     </nav>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#" id="pill-1">Packages and Services</a>
+        <a href="#" id="pill-2">Reviews</a>
+        <a href="#" id="pill-3">About Us</a>
+        <a href="#" id="pill-4">Contact Us</a>
+      </div>
+    </div>
+  
