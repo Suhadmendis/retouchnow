@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="_img/logo.png" alt="" height="30">
           </a>
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
@@ -436,32 +436,32 @@
                 <p class="footer-head">Support</p>
 
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Help & FAQs
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Contact us
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Refunds
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Platform Status
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Affiliate Program
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     About us
                   </a>
                 </p>
@@ -472,32 +472,32 @@
                 <p class="footer-head">Company</p>
                 
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Blog
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Affiliate Program
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Background Removal
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Careers
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     About us
                   </a>
                 </p>
                 <p class="footer-sub">
-                  <a class="a-link" href="terms_of_service.html">
+                  <a class="a-link" href="terms_of_service.php">
                     Press
                   </a>
                 </p>
@@ -520,25 +520,25 @@
               </p>
               <p class="footer-bottom-text" > | </p>
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   General Terms and Conditions
                 </a>
               </p>
               <p class="footer-bottom-text" > | </p>
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   Terms of Service
                 </a>
               </p>
               <p class="footer-bottom-text" > | </p>
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   Cookie Policy
                 </a>
               </p>
               <p class="footer-bottom-text" > | </p>
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   Privacy Policy
                 </a>
               </p>
@@ -547,13 +547,13 @@
             <div id="footer-bottom-text-box-mobile">
               <!-- <p class="footer-bottom-text" > | </p> -->
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   General Terms and Conditions
                 </a>
               </p>
               <p class="footer-bottom-text" > | </p>
               <p class="footer-bottom-text">
-                <a class="a-link" href="terms_of_service.html">
+                <a class="a-link" href="terms_of_service.php">
                   Terms of Service
                 </a>
               </p>
