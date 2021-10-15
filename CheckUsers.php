@@ -6,7 +6,7 @@ date_default_timezone_set('Asia/Colombo');
 
 
 // require_once ("../DB_connector.php");
-require "phpmailertesting/PHPMailer/PHPMailerAutoload.php";
+// require "phpmailertesting/PHPMailer/PHPMailerAutoload.php";
 
 
 // print_r($_POST);
@@ -64,36 +64,35 @@ if (isset($_GET['Command'])) {
 
 if ($Command == "CheckUsers") {
 
+    $sql = "SELECT * FROM m_registration WHERE email =  '" . $_GET['UserName'] . "' and password =  '" . $_GET['Password'] . "' ";
+    $result = $conn->query($sql);
 
+    if ($row = $result->fetch()) {
 
-    try {
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $conn->beginTransaction();
-
-
-           $sql = "Insert into user_mast(user_name, mobile, display_name)values
-                        ('" . $_GET['UserName'] . "','" . $_GET['Password'] . "','" . $_GET['display_name'] . "')";
-            $result = $conn->query($sql);
-
-            $action = "ok";
-
-            
-            
-            
-            $cookie_name = "user";
-            $cookie_value = "John Doe";
-            setcookie('tallleesstreamsanofi', $cookie_value, time() + (86400 * 30), "/");
+        
+        $sessionId = session_id();
+        $_SESSION['sessionId'] = session_id();
+        session_regenerate_id();
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $_SESSION['UserName'] = $_GET['UserName'];
+        $_SESSION['CURRENT_USER'] = $_GET['UserName'];
+        $_SESSION['REF'] = $row["REF"];
+       
         
 
-        $conn->commit();
+         $domain = $_SERVER['HTTP_HOST'];
+         
+        $cookie_value = $_GET['UserName'];
+    
+        $token = substr(hash('sha512', mt_rand() . microtime()), 0, 50);
+        $extime = time() + 43200;
 
-        echo "Saved";
-    } catch (Exception $e) {
-        $conn->rollBack();
-        echo $e;
+        setcookie('retouchnow', $cookie_value, $extime, "/", $domain);
+        echo 'OK';
+    } else {
+        echo 'NOT';
+        
     }
-
-  
 
 }
 
@@ -162,8 +161,8 @@ if ($Command == "register") {
         $conn->beginTransaction();
 
 
-           $sql = "Insert into registration(name, mobile, email, speciality)values
-                        ('" . $_GET['name'] . "','" . $_GET['mobile'] . "','" . $_GET['email'] . "','" . $_GET['speciality'] . "')";
+           $sql = "Insert into m_registration(email, password)values
+                        ('" . $_GET['UserName'] . "','" . $_GET['Password'] . "')";
             $result = $conn->query($sql);
 
             $action = "ok";
@@ -181,37 +180,37 @@ if ($Command == "register") {
 
 
 
-                // echo $_GET['email_to_revover'];
-                // $to   = "suhad.a.mendis@gmail.com";
-                $to   = $_GET['email'];
-                $from = 'autoreply@talleeslivestream.com';
-                $name = 'Tallees';
-                $subj = 'Sanofi Webinar';
+                // // echo $_GET['email_to_revover'];
+                // // $to   = "suhad.a.mendis@gmail.com";
+                // $to   = $_GET['email'];
+                // $from = 'autoreply@talleeslivestream.com';
+                // $name = 'Tallees';
+                // $subj = 'Sanofi Webinar';
 
 
-                $msg = "<div class='info-pallet'>
-                    <p class='info-pill'><strong>Thank you for Registering.</strong></p>
-                    <p class='info-pill'>Follow the link to join the Live Webinar on 16th October at 7.30pm</p>
-                    <p class='info-pill'>https://sanofi.talleeslivestream.com/auth.php</p>
-                </div>";
+                // $msg = "<div class='info-pallet'>
+                //     <p class='info-pill'><strong>Thank you for Registering.</strong></p>
+                //     <p class='info-pill'>Follow the link to join the Live Webinar on 16th October at 7.30pm</p>
+                //     <p class='info-pill'>https://sanofi.talleeslivestream.com/auth.php</p>
+                // </div>";
 
                 
-                // $msg = "ds";
+                // // $msg = "ds";
 
-                // $error=smtpmailer($to,$from, $name ,$subj, $msg);
+                // // $error=smtpmailer($to,$from, $name ,$subj, $msg);
 
 
-                // if($error == 1){
-                //     echo "E-mail Sent";
-                // }else{
-                //     echo "E-mail not Sent";
-                // }
+                // // if($error == 1){
+                // //     echo "E-mail Sent";
+                // // }else{
+                // //     echo "E-mail not Sent";
+                // // }
 
-                $response = file_get_contents('https://cccl.lk/IELTS/test.php?Command=register&name=fnsd&mobile=fdsg&email='. $to .'&speciality=sfdsdf');
+                // $response = file_get_contents('https://cccl.lk/IELTS/test.php?Command=register&name=fnsd&mobile=fdsg&email='. $to .'&speciality=sfdsdf');
             
-                $response = json_decode($response);
+                // $response = json_decode($response);
 
-                echo $response;
+                // echo $response;
 
 
             }
@@ -348,7 +347,7 @@ if ($Command == "logout") {
 
     $today = date('Y-m-d');
     $domain = $_SERVER['HTTP_HOST'];
-    setcookie('tallleesstreamsanofi', "", 1, "/", $domain);
+    setcookie('retouchnow', "", 1, "/", $domain);
 
 
 

@@ -36,7 +36,7 @@
 
             </ul>
             <form class="d-flex">
-              <a class="login-button" href="#">Login</a>
+              <a class="login-button" href="auth.php">Login</a>
               <button class="button button-primary" type="submit">Sign up</button>
             </form>
           </div>

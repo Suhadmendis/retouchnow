@@ -19,7 +19,9 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+    
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="_js/axios.min.js"></script>
 
   <link rel="stylesheet" href="_css/header.css">
   <link rel="stylesheet" href="_css/style.css">
@@ -77,12 +79,12 @@
                 <p class="editing-category">
                   Editing Category
                 </p>
-                <button :class="sub_job.base == 1 ? 'button button-primary' : 'button button-default'" @click="editingCategory(sub_job,'base')">Base Retouch</button>
-                <button :class="sub_job.advanced == 1 ? 'button button-primary' : 'button button-default'" @click="editingCategory(sub_job,'advanced')">Advanced Retouch</button>
+
+                <button :class="sub_job.cat_ref == category.REF ? 'button button-primary' : 'button button-default'" v-for="category in CATEGORIES" @click="setCategory(sub_job,category.REF,category.cost)">{{ category.name }}</button>
                 <!-- <button class="button button-primary">My Jobs</button> -->
-                <p class="cost">Cost: $ {{ sub_job.cost.toFixed(2) }}</p>
+                <p class="cost">Cost: $ {{ sub_job.cost }}</p>
                 <p class="note">Notes / Special Instructions</p>
-                <textarea name="" id="" class="form-control note-input"></textarea>
+                <textarea name="" id="" v-model="sub_job.notes" class="form-control note-input"></textarea>
               </div>
             </div>
           </div>
