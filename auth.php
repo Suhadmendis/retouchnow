@@ -16,8 +16,7 @@
                         <input type="text" id="txtPassword" class="login-input">
                         <br>
                         
-                        <p class="input-label">Name as it should appear<br> in the certificate participation*</p>
-                        <input type="text" id="display_name" class="login-input">
+                      
 
                         <button id="info-button" onClick="IsValiedData()">
                             Sign in
