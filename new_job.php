@@ -111,7 +111,7 @@
 
         <div class="col-md-12">
           <button class="button button-border button-left" @click="addImage()">Add More Photos</button>
-          <button class="button button-primary button-right">Continue</button>
+          <button class="button button-primary button-right"  @click="save_operation()">Continue</button>
         </div>
         
 
