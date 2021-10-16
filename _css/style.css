@@ -9,8 +9,12 @@
   box-sizing: border-box;
 }
 
-.navbar-light .navbar-toggler{
-  border-color: rgb(0, 0, 0, .0);
+.wrapper {
+  min-height: 528px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(0, 0, 0, 0);
 }
 
 .vertical-center {
@@ -37,6 +41,7 @@
   font-size: 13px;
   margin-left: 3px;
   margin-right: 3px;
+  margin-bottom: 5px;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -47,9 +52,9 @@
   background-color: #1aa7ec;
 }
 
-.login-button{
+.login-button {
   text-decoration: none;
-  color: rgb(0, 0, 0, .55);
+  color: rgb(0, 0, 0, 0.55);
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
@@ -58,8 +63,8 @@
   margin-right: 50px;
 }
 
-.login-button:hover{
-  color: rgb(0, 0, 0, .65);
+.login-button:hover {
+  color: rgb(0, 0, 0, 0.65);
 }
 
 .button-default {
@@ -183,13 +188,11 @@
   padding-bottom: 100px;
 }
 
-#story2-section-mobile{
+#story2-section-mobile {
   display: none;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-
 
 /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
 
@@ -329,22 +332,21 @@
 
 /* wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section   wave-section */
 
-
 @media (max-width: 767px) {
   .vertical-center {
     margin-top: 50px;
   }
   /* story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section   story2-section */
 
-  #story1-section{
+  #story1-section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   #story2-section {
     display: none;
   }
-  
-  #story2-section-mobile{
+
+  #story2-section-mobile {
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -357,12 +359,10 @@
     text-align: center;
   }
 
-  #wave-section{
+  #wave-section {
     height: 200px;
   }
-  #wave-section > img{
+  #wave-section > img {
     display: none;
   }
-
-
 }

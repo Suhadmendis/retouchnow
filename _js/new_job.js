@@ -34,6 +34,22 @@ var app = new Vue({
         this.CATEGORIES = response.data[0];
       });
     },
+    save_operation: function () {
+      axios
+        .get(
+          "server/new_job_data.php?Command=save_operation&job_name=" +
+            this.job_name +
+            "&sub_jobs=" +
+            JSON.stringify(this.SUB_JOBS) +
+            "&tot=" +
+            this.TOTAL
+        )
+        .then((response) => {
+          if (response.data == "Saved") {
+            location.href = "job_confirmation.php";
+          }
+        });
+    },
     editingCategory: function (sub_job, flag) {
       if (flag == "base") {
         sub_job.base = 1;

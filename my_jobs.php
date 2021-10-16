@@ -17,6 +17,7 @@
       rel="stylesheet">
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script src="_js/axios.min.js"></script>
 
     <link rel="stylesheet" href="_css/header.css">
     <link rel="stylesheet" href="_css/style.css">
@@ -30,7 +31,8 @@
 
   <?php include 'header.php'; ?>
 
-      <div class="container">
+      <div class="wrapper">
+        <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2 class="page-title">My Jobs</h2>
@@ -53,40 +55,33 @@
                 </thead>
                 <tbody>
                   
-                  <tr class="table-header">
-                    <td>Name Name</td>
-                    <td>1</td>
-                    <td>Editing</td>
+                  <tr class="table-header" v-for="job in JOBS">
+                    <td>{{ job.name }}</td>
+                    <td>{{ job.sub_jobs.length }}</td>
+                    <td>{{ job.status }}</td>
                   </tr>
 
-                  <tr class="table-header">
-                    <td>Name Name</td>
-                    <td>4</td>
-                    <td>Editing</td>
+                  <tr class="table-header" v-if="JOBS == ''">
+                   
+                    <td colspan=3 style="text-align: center" >{{ records }}</td>
+                    
                   </tr>
 
-                  <tr class="table-header">
-                    <td>Name Name</td>
-                    <td>2</td>
-                    <td>Editing</td>
-                  </tr>
-
-                  <tr class="table-header">
-                    <td>Name Name</td>
-                    <td>1</td>
-                    <td>Editing</td>
-                  </tr>
+                  
 
                 </tbody>
               </table>
+
+              <br>
 
 
           </div>
         </div>
       </div>
+      </div>
 
 
-<br><br>
+
 <?php include 'footer.php'; ?>
 
   </div>
@@ -98,7 +93,7 @@
 
 
 
-    <script src="_js/script.js" ></script>
+    <script src="_js/my_jobs.js" ></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
