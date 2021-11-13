@@ -29,7 +29,7 @@
 <body>
   <div id="app">
 
-  <!-- <?php include 'header.php'; ?> -->
+  <?php include 'header.php'; ?>
 
       <div class="wrapper">
         <div class="container">
@@ -97,7 +97,7 @@
 
 
 
-<!-- <?php include 'footer.php'; ?> -->
+<?php include 'footer.php'; ?>
 
   </div>
 
