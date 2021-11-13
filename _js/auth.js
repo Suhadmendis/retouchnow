@@ -32,15 +32,15 @@ var app = new Vue({
     },
     register: function () {
 
-      alert()
+      
 
-      axios.get("server/user_data.php?Command=register").then((response) => {
-        if (response.data[0].length > 0) {
-          this.JOBS = response.data[0];
-        } else {
-          this.JOBS = [];
-          this.records = "No Jobs";
-        }
+      axios.get("server/user_data.php?Command=register&first_name="+ this.first_name +"&last_name="+ this.last_name +"&email="+ this.txtUserName +"&password="+ this.txtPassword).then((response) => {
+        // if (response.data[0].length > 0) {
+        //   this.JOBS = response.data[0];
+        // } else {
+        //   this.JOBS = [];
+        //   this.records = "No Jobs";
+        // }
       });
     },
   },
