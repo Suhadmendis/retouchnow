@@ -83,7 +83,7 @@ session_start();
                                   <p class="error-message">Forgotten your login details?</p>
                               </div>
                               <div class="button-area">
-                                  <button class="button button-primary" @click="register()">Sign up</button>
+                                  <button class="button button-primary" >Sign up</button>
                                   <button class="button button-default">Create Account</button>
                               </div>
                               <div class="forgot-message-area">
