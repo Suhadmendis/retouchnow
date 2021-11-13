@@ -44,7 +44,7 @@ session_start();
                 if ($_SESSION['CURRENT_USER'] != "") {
                   echo '<a class="login-button" href="auth.php">'. $_SESSION['CURRENT_USER'] .'</a>';     
                 }else{
-                  echo '<a class="login-button" href="auth.php">Login</a>'; 
+                  // echo '<a class="login-button" href="auth.php">Login</a>'; 
                 }
               
               ?>
