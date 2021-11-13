@@ -3,6 +3,10 @@ var app = new Vue({
   data: {
     JOBS: "",
     records: "Loading...",
+    first_name: "",
+    last_name: "",
+    txtUserName: "",
+    txtPassword: ""
   },
   mounted: function () {
     this.check_user();
@@ -17,7 +21,20 @@ var app = new Vue({
       });
     },
     initial: function () {
-      axios.get("server/my_jobs_data.php?Command=generate").then((response) => {
+      // axios.get("server/my_jobs_data.php?Command=generate").then((response) => {
+      //   if (response.data[0].length > 0) {
+      //     this.JOBS = response.data[0];
+      //   } else {
+      //     this.JOBS = [];
+      //     this.records = "No Jobs";
+      //   }
+      // });
+    },
+    register: function () {
+
+      alert()
+
+      axios.get("server/user_data.php?Command=register").then((response) => {
         if (response.data[0].length > 0) {
           this.JOBS = response.data[0];
         } else {

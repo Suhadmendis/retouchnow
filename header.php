@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item top-menu">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link"  href="#">Contact Us</a>
               </li>
               <!-- <li class="nav-item top-menu dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,10 +42,10 @@
                 if ($_SESSION['CURRENT_USER'] != "") {
                   echo '<a class="login-button">My Jobs</a>'; 
                   echo '<a class="login-button">'. $_SESSION['CURRENT_USER'] .'</a>'; 
-                  echo '<a class="login-button">Logout</a>'; 
+                  echo '<a class="login-button" onclick="logout()">Logout</a>'; 
                 }else{
                   echo '<a class="login-button" href="auth.php">Login</a>'; 
-                  echo '<button class="button button-primary" href="auth.php">Sign up</button>'; 
+                  echo '<button class="button button-primary" href="register.php">Sign up</button>'; 
                 }
               
               ?>
