@@ -36,7 +36,15 @@
 
             </ul>
             <form class="d-flex">
-              <a class="login-button" href="auth.php">Login</a>
+              <?php 
+                if ($_SESSION['CURRENT_USER'] != "") {
+                  echo '<a class="login-button" href="auth.php">'. $_SESSION['CURRENT_USER'] .'</a>';     
+                }else{
+                  echo '<a class="login-button" href="auth.php">Login</a>'; 
+                }
+              
+              ?>
+              
               <button class="button button-primary" type="submit">Sign up</button>
             </form>
           </div>
