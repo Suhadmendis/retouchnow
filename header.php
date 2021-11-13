@@ -40,14 +40,16 @@
             <form class="d-flex">
               <?php 
                 if ($_SESSION['CURRENT_USER'] != "") {
-                  echo '<a class="login-button" href="auth.php">'. $_SESSION['CURRENT_USER'] .'</a>';     
+                  echo '<a class="login-button">'. $_SESSION['CURRENT_USER'] .'</a>'; 
+                  echo '<a class="login-button">Logout</a>'; 
                 }else{
-                  // echo '<a class="login-button" href="auth.php">Login</a>'; 
+                  echo '<a class="login-button" href="auth.php">Login</a>'; 
+                  echo '<button class="button button-primary" href="auth.php">Sign up</button>'; 
                 }
               
               ?>
               
-              <button class="button button-primary" type="submit">Sign up</button>
+              
             </form>
           </div>
 
