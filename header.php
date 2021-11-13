@@ -40,6 +40,7 @@
             <form class="d-flex">
               <?php 
                 if ($_SESSION['CURRENT_USER'] != "") {
+                  echo '<a class="login-button">My Jobs</a>'; 
                   echo '<a class="login-button">'. $_SESSION['CURRENT_USER'] .'</a>'; 
                   echo '<a class="login-button">Logout</a>'; 
                 }else{

@@ -57,10 +57,11 @@
   color: rgb(0, 0, 0, 0.55);
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 12px;
   font-weight: 600;
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .login-button:hover {
