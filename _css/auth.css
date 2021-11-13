@@ -1,0 +1,95 @@
+.login-box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-form {
+  padding: 50px;
+}
+.image-area {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#image {
+}
+
+.input-box {
+}
+.label-text {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #707070;
+}
+.form-input {
+  padding: 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+
+  color: #707070;
+  font-size: 20px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(189, 189, 189);
+}
+
+.error-message-area {
+  height: 30px;
+}
+.error-message {
+}
+.button-area {
+}
+.button {
+}
+
+.forgot-message-area {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.forgot-message {
+}
+
+.right-image-area {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(29, 56, 211, 0.62),
+      rgba(17, 16, 17, 0.83)
+    ),
+    url("../_img/login-background.png");
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.login-welcome-text-box {
+  color: white;
+}
+
+.upper-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.middle-text {
+  font-size: 40px;
+  font-weight: 400;
+}
+.spe-line {
+  height: 3px;
+  width: 40%;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.lower-text {
+  font-size: 14px;
+  font-weight: 400;
+}
