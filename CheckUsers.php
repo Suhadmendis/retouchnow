@@ -75,7 +75,7 @@ if ($Command == "CheckUsers") {
         session_regenerate_id();
         $ip = $_SERVER['REMOTE_ADDR'];
         $_SESSION['UserName'] = $_GET['UserName'];
-        $_SESSION['CURRENT_USER'] = $_GET['UserName'];
+        $_SESSION['CURRENT_USER'] = $row["first_name"];
         $_SESSION['REF'] = $row["REF"];
        
         

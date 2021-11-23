@@ -51,7 +51,17 @@ var app = new Vue({
       
       this.selected_user = user;
     },
+    toHome: function () {
+      window.location.href = "index.php";
+    },
+    toNewJob: function () {
+      window.location.href = "new_job.php";
+    },
+    toMyJobs: function () {
+      window.location.href = "my_jobs.php";
+    },
   },
+  
 });
 
 document.getElementById("pill-1").style.color = "black";

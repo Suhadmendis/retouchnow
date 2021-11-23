@@ -1,5 +1,7 @@
 
+<script src="_js/user.js" ></script>
     
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="index.php">
@@ -19,7 +21,7 @@
                 <a class="nav-link" href="#">Reviews</a>
               </li>
               <li class="nav-item top-menu">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="aboutus.php">About Us</a>
               </li>
               <li class="nav-item top-menu">
                 <a class="nav-link"  href="#">Contact Us</a>
@@ -40,12 +42,13 @@
             <form class="d-flex">
               <?php 
                 if ($_SESSION['CURRENT_USER'] != "") {
-                  echo '<a class="login-button">My Jobs</a>'; 
-                  echo '<a class="login-button">'. $_SESSION['CURRENT_USER'] .'</a>'; 
-                  echo '<a class="login-button" onclick="logout()">Logout</a>'; 
+                  echo '<a class="login-button" href="my_jobs.php">My Jobs</a>'; 
+                  echo '<a class="login-button">Hi, '. $_SESSION['CURRENT_USER'] .'</a>'; 
+                  echo '<a class="button button-primary" href="new_job.php">New Job</a>'; 
+                  // echo '<a class="login-button" onclick="logout()">Logout</a>'; 
                 }else{
                   echo '<a class="login-button" href="auth.php">Login</a>'; 
-                  echo '<button class="button button-primary" href="register.php">Sign up</button>'; 
+                  echo '<a class="button button-primary" href="register.php"> Sign up</a>'; 
                 }
               
               ?>

@@ -72,11 +72,11 @@ session_start();
                                   <input type="password" id="txtPassword" class="form-input">
                               </div>
                               <div class="error-message-area">
-                                  <p class="error-message">Forgotten your login details?</p>
+                                  <p id="error-message-element" class="error-message">&nbsp;</p>
                               </div>
                               <div class="button-area">
                                   <button class="button button-primary" onClick="IsValiedData()">Login</button>
-                                  <button class="button button-default">Create Account</button>
+                                  <button class="button button-default" @click="toRegister()">Create Account</button>
                               </div>
                               <div class="forgot-message-area">
                                   <p class="forgot-message">Forgotten your login details? <b>Get Help Signing in</b></p>

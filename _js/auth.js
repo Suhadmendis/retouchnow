@@ -6,7 +6,8 @@ var app = new Vue({
     first_name: "",
     last_name: "",
     txtUserName: "",
-    txtPassword: ""
+    txtPassword: "",
+    error_message: " "
   },
   mounted: function () {
     this.check_user();
@@ -32,16 +33,47 @@ var app = new Vue({
     },
     register: function () {
 
-      
+      // alert("fsdf");
+
+      if (this.first_name == "") {
+        this.error_message = "Please enter First Name";
+        return;
+      }
+
+      if (this.last_name == "") {
+        this.error_message = "Please enter Last Name";
+        return;
+      }
+
+      if (this.txtUserName == "") {
+        this.error_message = "Please enter Email";
+        return;
+      }
+
+      if (this.txtPassword == "") {
+        this.error_message = "Please enter Password";
+        return;
+      }
+
 
       axios.get("server/user_data.php?Command=register&first_name="+ this.first_name +"&last_name="+ this.last_name +"&email="+ this.txtUserName +"&password="+ this.txtPassword).then((response) => {
-        // if (response.data[0].length > 0) {
-        //   this.JOBS = response.data[0];
-        // } else {
-        //   this.JOBS = [];
-        //   this.records = "No Jobs";
-        // }
+       
+        if (response.data == 'Saved') {
+          alert('Thank you for Registering');
+          this.first_name = '';
+          this.error_message = '';
+          this.last_name = '';
+          this.txtUserName = '';
+          this.txtPassword = '';
+
+        }else{
+          alert('Please try again later');
+        }
       });
+      
+    },
+    toRegister: function () {
+      window.location.href = "register.php";
     },
   },
 });

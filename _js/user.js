@@ -19,10 +19,10 @@ function GetXmlHttpObject() {
 function IsValiedData() {
   if (document.getElementById("txtUserName").value == "") {
     document.getElementById("txtUserName").focus();
-    alert("Please Enter Name");
+    document.getElementById("error-message-element").innerHTML = "Please Enter Email";
     return false;
   } else if (document.getElementById("txtPassword").value == "") {
-    alert("Please Enter Mobile");
+    document.getElementById("error-message-element").innerHTML = "Please Enter Password";
     document.getElementById("txtPassword").focus();
     return false;
   } else {

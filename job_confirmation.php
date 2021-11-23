@@ -97,9 +97,9 @@ session_start();
       <div class="row">
         <div class="col-md-12">
           <div class="button-box">
-            <button class="button button-default">Home</button>
-            <button class="button button-default">New Job</button>
-            <button class="button button-primary">My Jobs</button>
+            <button class="button button-default" @click="toHome">Home</button>
+            <button class="button button-default" @click="toNewJob">New Job</button>
+            <button class="button button-primary" @click="toMyJobs">My Jobs</button>
           </div>
         </div>
       </div>

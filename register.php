@@ -80,7 +80,7 @@ session_start();
                                   <input type="password" v-model="txtPassword" class="form-input">
                               </div>
                               <div class="error-message-area">
-                                  <p class="error-message">Forgotten your login details?</p>
+                                  <p class="error-message"> &nbsp;{{ error_message }}</p>
                               </div>
                               <div class="button-area">
                                   <button class="button button-primary" @click="register()">Sign up</button>
@@ -134,7 +134,8 @@ session_start();
 
 
 
-    <script src="_js/auth.js" ></script>
+  <script src="_js/auth.js" ></script>
+  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
