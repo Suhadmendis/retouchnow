@@ -32,27 +32,40 @@ var app = new Vue({
       // });
     },
     register: function () {
-
+      this.error_message = "";
       // alert("fsdf");
 
-      if (this.first_name == "") {
-        this.error_message = "Please enter First Name";
-        return;
-      }
+      // if (this.first_name == "") {
+      //   this.error_message = "Please enter First Name";
+      //   return;
+      // }
 
-      if (this.last_name == "") {
-        this.error_message = "Please enter Last Name";
-        return;
-      }
+      // if (this.last_name == "") {
+      //   this.error_message = "Please enter Last Name";
+      //   return;
+      // }
 
       if (this.txtUserName == "") {
         this.error_message = "Please enter Email";
         return;
+      }else{
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.txtUserName)){
+
+        }else{
+          this.error_message = "Please enter valid Email Address";
+          return;
+        }
       }
 
       if (this.txtPassword == "") {
         this.error_message = "Please enter Password";
         return;
+      }else{
+        
+        if (this.txtPassword.length < 8) {
+          this.error_message = "Minimum password length must be at least 8 characters";
+          return;
+        }
       }
 
 
@@ -67,7 +80,13 @@ var app = new Vue({
           this.txtPassword = '';
 
         }else{
-          alert('Please try again later');
+          if (response.data == 'Already Exists') {
+            alert('THe Email Address is already Exists, Please login');
+          }else{
+            alert('Please try again later');
+          }
+          
+          
         }
       });
       

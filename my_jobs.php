@@ -59,7 +59,7 @@ session_start();
                 </thead>
                 <tbody>
                   
-                  <tr class="table-header" v-for="job in JOBS">
+                  <tr class="table-header" v-for="job in JOBS" @click="view_job(job)">
                     <td>{{ job.name }}</td>
                     <td>{{ job.sub_jobs.length }}</td>
                     <td>{{ job.status }}</td>

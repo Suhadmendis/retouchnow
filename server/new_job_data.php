@@ -54,8 +54,8 @@ if ($_GET["Command"] == "save_operation") {
 // print_r($sub_jobs);
 
         for ($i=0; $i < sizeof($sub_jobs); $i++) { 
-            $sql11    = "Insert into m_order_detail(REF, category_ref, cost, remark, status)values
-            ('" . $no1 . "' ,'" . $sub_jobs[$i]->cat_ref . "','" . $sub_jobs[$i]->cost . "','" . $sub_jobs[$i]->notes . "','Delivered')";
+            $sql11    = "Insert into m_order_detail(REF, category_ref, cost, url, remark, status)values
+            ('" . $no1 . "' ,'" . $sub_jobs[$i]->cat_ref . "','" . $sub_jobs[$i]->cost . "','" . $sub_jobs[$i]->image_name . "','" . $sub_jobs[$i]->notes . "','Delivered')";
             $result = $conn->query($sql11);
         }
 

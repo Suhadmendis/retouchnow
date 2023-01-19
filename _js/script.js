@@ -60,6 +60,9 @@ var app = new Vue({
     toMyJobs: function () {
       window.location.href = "my_jobs.php";
     },
+    toJobConfirmation: function () {
+      window.location.href = "job_confirmation.php";
+    },
   },
   
 });

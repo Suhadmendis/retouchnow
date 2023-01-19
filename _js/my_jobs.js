@@ -26,6 +26,9 @@ var app = new Vue({
         }
       });
     },
+    view_job: function (job) {
+      window.location.href = "view_job.php?REF="+job.REF;
+    },
   },
 });
 

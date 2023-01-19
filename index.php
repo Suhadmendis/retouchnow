@@ -33,6 +33,9 @@ session_start();
     <link rel="stylesheet" href="_css/footer.css">
 
 
+    <script src="_js/user.js" ></script>
+    
+
 </head>
 <body>
   <div id="app">
@@ -66,7 +69,7 @@ session_start();
         <div class="row">
             <div class="col-md-12">
                 <h1 id="quote-test" data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum</h1>
+                data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. mendis</h1>
                 <p id="quote-owner-name" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">Lorem ipsum</p>
             </div>
@@ -85,7 +88,7 @@ session_start();
                  <div class="progress-icon-area">
                   <i class="fas fa-shopping-cart"></i>
                  </div>
-                 <p class="progress-head-text">Lorem ipsum dolor</p>
+                 <p class="progress-head-text">Lorem ipsum akila</p>
                  <p class="progress-des-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint repudiandae suscipit veniam vero accusamus a, saepe architecto harum aliquid.</p>
 
                </div>
@@ -375,7 +378,11 @@ session_start();
 
 
 
-    <script src="_js/script.js" ></script>
+  <script src="_js/script.js" ></script>
+
+
+    
+  
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

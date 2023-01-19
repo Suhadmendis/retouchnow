@@ -90,7 +90,7 @@ if ($Command == "CheckUsers") {
         setcookie('retouchnow', $cookie_value, $extime, "/", $domain);
         echo 'OK';
     } else {
-        echo 'NOT';
+        echo 'Invalid';
         
     }
 

@@ -1,6 +1,4 @@
 
-<script src="_js/user.js" ></script>
-    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -15,7 +13,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item top-menu">
-                <a class="nav-link active" aria-current="page" href="#">Packages and Services</a>
+                <a class="nav-link active" aria-current="page" href="#packages-section">Packages and Services</a>
               </li>
               <li class="nav-item top-menu">
                 <a class="nav-link" href="#">Reviews</a>
@@ -44,8 +42,9 @@
                 if ($_SESSION['CURRENT_USER'] != "") {
                   echo '<a class="login-button" href="my_jobs.php">My Jobs</a>'; 
                   echo '<a class="login-button">Hi, '. $_SESSION['CURRENT_USER'] .'</a>'; 
+                  echo '<a class="login-button" onclick="logout()">Logout</a>'; 
                   echo '<a class="button button-primary" href="new_job.php">New Job</a>'; 
-                  // echo '<a class="login-button" onclick="logout()">Logout</a>'; 
+                  
                 }else{
                   echo '<a class="login-button" href="auth.php">Login</a>'; 
                   echo '<a class="button button-primary" href="register.php"> Sign up</a>'; 

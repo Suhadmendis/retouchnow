@@ -10,8 +10,6 @@ date_default_timezone_set('Asia/Colombo');
 
 if ($_GET["Command"] == "generate") {
    header('Content-Type: application/json');
-
-
     
     $objArray = Array();
     $sql = "SELECT * FROM m_order where reg_ref = '" . $_SESSION['REF'] . "'";

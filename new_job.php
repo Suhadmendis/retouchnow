@@ -23,7 +23,8 @@ session_start();
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="_js/axios.min.js"></script>
 
@@ -73,7 +74,11 @@ session_start();
             <div class="row">
               <div class="col-md-6">
                 <div class="image-box">
-                  <img class="image" :src="sub_job.url" alt="">
+                  <img class="image" :src="sub_job.url"  alt="">
+                </div>
+                <div class="image-upload-btn">
+                  <input type="file" id="img_file" :sub-job-id="sub_job.id" @change="onFileSelect" hidden/>
+                  <label for="img_file" class="button button-border">Choose file</label>
                 </div>
               </div>
               <div class="col-md-6">
@@ -86,6 +91,13 @@ session_start();
 
                 <button :class="sub_job.cat_ref == category.REF ? 'button button-primary' : 'button button-default'" v-for="category in CATEGORIES" @click="setCategory(sub_job,category.REF,category.cost)">{{ category.name }}</button>
                 <!-- <button class="button button-primary">My Jobs</button> -->
+                <p class="cat-features">{{ sub_job.feature_1 }}</p>
+                <p class="cat-features">{{ sub_job.feature_2 }}</p>
+                <p class="cat-features">{{ sub_job.feature_3 }}</p>
+                <p class="cat-features">{{ sub_job.feature_4 }}</p>
+                <p class="cat-features">{{ sub_job.feature_5 }}</p>
+                <p class="cat-features">{{ sub_job.feature_6 }}</p>
+                <p class="cat-features">{{ sub_job.feature_7 }}</p>
                 <p class="cost">Cost: $ {{ sub_job.cost }}</p>
                 <p class="note">Notes / Special Instructions</p>
                 <textarea name="" id="" v-model="sub_job.notes" class="form-control note-input"></textarea>
